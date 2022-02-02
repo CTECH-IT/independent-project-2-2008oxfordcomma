@@ -1,21 +1,71 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <title>My Awesome Website</title>
-    <meta name="author" content="Dre Harm">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+  </style>
+  <meta name="viewport" content="width=device-width">
+  <title>Open Arms of Minnesota</title>
+  <meta name="author" content="Dre Harm">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
 
 <body>
-  <header>
-    <h1 class="page-title">My Awesome Website</h1>
-    <p>This is some awesome text.</p>
-  </header>
+  <div class="container">
+    <div class="navbar">
+      <img class="logo" data-image-role="trigger" src="img/openArmsOfMinnesotaLogo.png" alt="img/openArmsOfMinnesotaBestPicture.png">
+      <h2 class="title">Open Arms of Minnesota</h2>
+      <nav>
+        <ul id="menuList">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Donate</a></li>
+          <li><a href="">Volunteer</a></li>
+        </ul>
+      </nav>
+      <img src="img/menuIcon.png" class="menu-icon" onclick="toggleMenu()">
+    </div>
 
+    <div class="row-1">
+      <div class="col-1">
+        <h2 id="paragraphTitle"><em>"Food is Medicine"</em></h2>
+        <h3 class="introTextBoarder">
+          <div class="introText">
+            People who are sick shouldn't be without food.
+            However, everyday people with life-threatening illnesses
+            find themselves unable to shop or cook, and without the support to help them, we step in.
+          </div>
+        </h3>
+      </div>
+      <div class="col-2">
+        <img class="buildingImage" data-image-role="target" src="img/openArmsOfMinnesotaBuilding.jpg">
+        <div class="color-box"></div>
+        <div class="buttons">
+          <a href='getMealsIndex.html' target="blank"><button id="getMealsButton">Get Meals</button></a>
+          <br>
+          <button type="button" id="volunteerButton">Volunteer</button>
+          <br>
+          <button type="button" id="donateNowButton">Donate Now</button>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <div class="socialMediaLinks">
+      <img src="img/facebookLogo.png">
+      <img src="img/twitterLogo.png">
+    </div>
+
+    <div class="row-2">
+
+
+    </div>
+  </div>
   <script src="scripts/main.js"></script>
 </body>
+
 </html>
