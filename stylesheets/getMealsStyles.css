@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: #929984;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh; /* Using vh is viewport height and will help with scaling to smaller devices */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.title {
+    margin: auto;
+    padding: 10px;
+    color: white;
+}
+
+.title:hover {
+    color: #ffdd55;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #ff5ea2;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+#paragraphTitle {
+    color: white;
+    font-weight: 100;
+    margin: 10px 0 20px;
+}
+
+.col-1::before {
+    content: '';
+    width: 10px;
+    height: 95%;
+    background: linear-gradient(#feb820, #e27001);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2::before {
+    content: '';
+    width: 10px;
+    height: 95%;
+    background: linear-gradient(#feb820, #e27001);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-1 h4 {
+    font-size: 30;
+    color: white;
+    font-weight: 100;
+    margin: 10px 0 20px;
+}
+
+#paragraphTitle:hover {
+    color:#ffdd55;
+}
+
+.col-2 {
+    flex-basis: 40%;
+    position: relative;
+}
+
+button {
+    border: 0;
+    margin: 5px;
+    width: 140px;
+    outline: none; 
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 12px 10px;
+    transition: width 0.25s;
+}
+
+button:hover {
+    width: 160px;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+#getMealsButton {
+    background-color: #feb820;
+}
+
+#volunteerButton {
+    background-color: #e27001;
+}
+
+#donateNowButton {
+    background-color: #5d2800;
+}
+
+.row-2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.row-2 .buildingImage {
+    width: 50%;
+}
